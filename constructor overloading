@@ -1,37 +1,71 @@
 import java.util.*;
 
-class cube {
+
+class Cube {
+
      int length,height,breadth;
+
      public int getvolume(int length,int breadth,int height){
+
          return length * breadth * height;
+
      }
-     cube() {
+
+     Cube() {
+
          int length = breadth = height = 2;
+
          System.out.println("intilizing default constructor");
+
      }
-     cube(int l,int b){
+
+     Cube(int l,int b){
+
          length = l;
+
          breadth = b;
+
          height = 2;
+
          System.out.println("intilizing secound constructor with 2 arguments");
+
      }
-     cube(int l,int b,int h){
+
+     Cube(int l,int b,int h){
+
          length = l;
+
          breadth = b;
+
          height = h;
+
          System.out.println("intilizing third constructor with 3 arguments");
+
      }
+
      public static void main(String[] args){
-         cube obj1 = new cube();
+
+        Cube obj1 = new Cube();
+
         System.out.println("voulme of cube 1 is" + obj1.getvolume(obj1.length,obj1.breadth,obj1
-        .height));
-        int l1=2, b1=3;
-        cube obj2 = new cube(l1,b1);
+.height));
+
+
+        int l1=3, b1=4;
+
+        Cube obj2 = new Cube(l1,b1);
+
         System.out.println("voulme of cube 1 is" + obj1.getvolume(obj2.length,obj2.breadth,obj2
-        .height));
-        int l2=4, b2=5, h=2;
-        cube obj3 = new cube();
+.height));
+
+
+        int l2=3, b2=4, h=5;
+
+        Cube obj3 = new Cube(l2,b2,h);
+
         System.out.println("voulme of cube 1 is" + obj1.getvolume(obj3.length,obj3.breadth,obj3
-        .height));
+.height));
+
      }
+
 }
