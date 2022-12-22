@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Area {
+    public static double circle(double radius){
+        return Math.PI * radius * radius;
+    }
+    public static double square(double sides){
+        return sides*sides;
+    }
+    public static double rectangle(double width,double height){
+        return width*height;
+    }
+    public static double triangle(double base,double height1){
+        return 0.5 * base * height1;
+    }
+    
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter radius of circle");
+        double radius = sc.nextDouble();
+        System.out.println("area of circle is "+ circle(radius));
+        
+        System.out.println("enter sides of square");
+        double sides = sc.nextDouble();
+        System.out.println("area of circle is "+ square(sides));
+        
+        System.out.println("enter height and width  of rectangle");
+        double width = sc.nextDouble();
+        double height = sc.nextDouble();
+        System.out.println("area of rectangle is "+ rectangle(width,height));
+        
+        System.out.println("enter height and width of triangle");
+        double base = sc.nextDouble();
+        double height1 = sc.nextDouble();
+        System.out.println("area of triangle is "+triangle(base,height1));
+    }
+}
